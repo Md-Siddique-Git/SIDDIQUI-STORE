@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+main .card{
+    border: 3px solid rgb(71, 71, 224);
+    border-radius: 30px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    height: 350px;
+    width: 290px;
+    background-color: rgb(114, 204, 41);
+    box-sizing:content-box;
+    padding-bottom: 30px;
+     /* align-items: center;
+    justify-content: center; */
+   
+}
+main .card:hover{
+    padding: 20px 20px;
+    background-color: goldenrod;
+}
+main .img img{
+    width: 280px;
+    height: 200px;
+    margin: 5px ;
+    border-radius: 18px;
+   
+
+}
+main .detail{
+    margin: 0px 8px;
+    color: white;
+    font-family:sans-serif;
+    box-sizing: content-box;
+    text-align: center;
+}
+main h2{
+    margin: 8px 5px;
+    border: 2px solid rgb(151, 151, 226);
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #2a0bb6;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 20px;
+    text-align: center;
+    font-family: serif;
+}
+main span{
+    color: white;
+    background-color: rgb(54, 19, 209);
+    padding: 10px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    gap: 20px 30px;
+    padding: 100px;
+    max-height: 70vh;
+    max-width: 70wh;
+    overflow: scroll;
+}
+.card span:hover{
+    color: white;
+    background-color: rgb(109, 47, 255);
+    padding: 20px 20px;
+
+  }
+footer .notes{
+    text-align: right;
+    margin-right: 10px;
+    color: white;
+    padding: 10px ;
+    font-family: sans-serif;
+    
+}
+footer .contacts{
+    height: 100px;
+    width: 300px;
+    margin: 10px 30px;
+    padding: 10px 15px;
+    border-radius: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: sans-serif;
+
+
+}
+footer .contacts a{
+    text-decoration: none;
+    color: rgb(44, 245, 218);
+    font-size: 2em;
+}
+footer .contacts a:hover{
+    color: rgb(0, 255, 13);
+}
+footer .credit{
+    color: white;
+    padding: 20px;
+    margin: 5px 10px;
+    text-align: center;
+    font-size: large;
+}
+footer{
+    background-color: #3546e0;
+}
