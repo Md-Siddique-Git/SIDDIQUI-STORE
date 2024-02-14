@@ -14,7 +14,54 @@ nav ul .title .logo img {
 
 nav ul {
     display: flex;
-    list-style: none;
+    list-style: none;* {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: purple;
+}
+
+nav ul li {
+  padding:34px;
+  font-size: large;
+} 
+ 
+.title {
+  text-decoration:none;
+  text-align: center;
+  color: gold;
+}
+.title:hover{
+  color: aqua;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(242, 234, 250);
+}
+
+body {
+  background-color: #9bd4b1;
+  /* scroll-behavior: smooth; */
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+a:hover {
+  color: rgb(165, 236, 236);
+
+}
     justify-content: center;
     position: fixed;
     top: 0;
