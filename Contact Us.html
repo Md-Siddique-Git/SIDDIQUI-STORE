@@ -2,103 +2,121 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIDDIQUI STORE</title>
-  <link rel="stylesheet" href="navbar_style.css">
-  <link rel="icon" href="Assets/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDDIQUI STORE</title>
+    <link rel="stylesheet" href="navbar_style.css">
+    <link rel="icon" href="Assets/icon.png" type="image/x-icon">
 
-  <style>
-     
-    .join{
-      margin: 60px 30px;
-      color: white;
-      gap: 7px;
-      display: grid;
-     
-    }
-    body{
-      background-color: rgb(83, 92, 216);
-    }
-    .contacts{
-      display: grid;
-      color: white;
-      margin: 30px 30px;
-      font-size: large;
-      gap: 10px;
-    }
-    .credit{
-      color: white;
-      text-align: center;
-      font-size: 40px;
-    }
-    input {
-      border-radius: 20px;
-      padding: 10px 10px;
-    }
-    textarea{
-      border-radius: 20px;
-      padding: 10px 10px;
+    <style>
+        .join {
+            margin: 60px 30px;
+            color: white;
+            gap: 7px;
+            display: grid;
 
-    }
-    .join button{
-      border-radius: 20px;
-      padding: 10px 10px;
-      transition-duration: 0.4s;
-      font-size: large;
+        }
 
-    }
-    .join button:hover{
-      color: white;
-      background-color: rgb(109, 47, 255);
+        body {
+            background-color: rgb(83, 92, 216);
+        }
 
-    }
-    
-  </style>
+        .contacts {
+            display: grid;
+            color: white;
+            margin: 30px 30px;
+            font-size: large;
+            gap: 10px;
+        }
+
+        .credit {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        input {
+            border-radius: 20px;
+            padding: 10px 10px;
+        }
+
+        textarea {
+            border-radius: 20px;
+            padding: 10px 10px;
+
+        }
+
+        .join button {
+            border-radius: 20px;
+            padding: 10px 10px;
+            transition-duration: 0.4s;
+            font-size: large;
+
+        }
+
+        .join button:hover {
+            color: white;
+            background-color: rgb(109, 47, 255);
+
+        }
+    </style>
 
 </head>
 
 <body>
-  <header>
-    <nav>
-        <ul>
-          <li><a class="title" href="index.html">SIDSHOP</a></li>
-            <li><a href="Electronics Gadgets.html">Electronic Gadgets</a></li>
-            <li><a href="Softwares.html">Softwares</a></li>
-            <li><a href="Contact Us.html">Contact Us</a></li>
-            <li><a href="Cart.html">Cart</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-  <footer>
-    <div class="contacts">
-<h2> <a class="title" href="home.html">SIDDIQUI STORE</a></h2>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="title" href="index.html">SIDSHOP</a></li>
+                <li><a href="Electronics Gadgets.html">Electronic Gadgets</a></li>
+                <li><a href="Softwares.html">Softwares</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <footer>
+            <div class="contacts">
+                <h2> <a class="title" href="home.html">SIDDIQUI STORE</a></h2>
 
-      <h4>CONTACT US</h4>
-      <span>Email: siddiqueece2016@gmail.com</span>
-      <span>Call Us: +91 8447527003</span>
-    </div>
-    <!-- <div class="credit"> © All rigts are Reserved by MD SDIQUE
+                <h4>CONTACT US</h4>
+                <span>Email: siddiqueece2016@gmail.com</span>
+                <span>Call Us: +91 8447527003</span>
+            </div>
+            <!-- <div class="credit"> © All rigts are Reserved by MD SDIQUE
 
     </div> -->
 
 
-    <div class="join">
-      <h2>JOIN US</h2>
-      <label for="name">Name</label><input class="name" placeholder="Name" type="text">
-      <label for="Email">Email</label><input class="Email" placeholder="Email" type="text">
-      <label for="Contact No.">Contact No.</label><input class="Contact No." placeholder="Enter your contact No. " type="number">
-      <textarea name="Feedback" id="" cols="102" rows="10">Feedback</textarea>
-    <button>SUBMIT</button>
+            <h2 class="join">JOIN US</h2>
+            <form id="submitForm" class="join">
 
-    </div>
+                <label for="name">Name</label><input id="name" placeholder="Name" type="text">
+                <label for="Email">Email</label><input id="Email" placeholder="Email" type="text">
+                <label for="Contact No.">Contact No.</label><input id="ContactNo." placeholder="Enter your contact No. "
+                    type="number">
+                <textarea name="Feedback" id="textarea" cols="102" rows="10" placeholder="Feedback"></textarea>
+                <button id="submit" >SUBMIT</button>
 
-    <div class="credit"> ©2024 All rigts are Reserved by MD SIDDIQUE
+            </form>
 
-    </div>
+            <div class="credit"> &copy;2024 All rigts are Reserved by MD SIDDIQUE
+            </div>
 
-  </footer>
+        </footer>
+
+        <script>
+           var creditEliment= document.querySelector('.credit');
+           creditEliment.innerHTML='&copy; '+ new Date().getFullYear() + '  All rights are reserved by MD SIDDIQUE';
+
+           document.getElementById('submitForm').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            let name = document.getElementById('name').value;
+            alert("We Will Contact You Soon");
+           });
+        </script>
 </body>
 
 </html>
