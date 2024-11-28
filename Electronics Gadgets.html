@@ -31,7 +31,7 @@
             <div class="img"><img src="Assets/attendance recorder img.jfif" alt=""></div>
             <div class="detail">It can record your employee's attendance exit entery time </div>
             <h2>Attendance Recorder</h2>
-            <span>Buy Now @ ₹1200</span>
+            <span class="Buy">Buy Now @ ₹1200</span>
         </div>
 
         <!-- Automated fire extinguisher Robot -->
@@ -40,7 +40,7 @@
             <div class="img"><img src="Assets/fireextinguisher.jpg" alt=""></div>
             <div class="detail">It can sense fire and extinguish water on it </div>
             <h2>Automated Fire Robot</h2>
-            <span>Buy Now @ ₹1000</span>
+            <span class="Buy">Buy Now @ ₹1000</span>
 
         </div>
 
@@ -50,7 +50,7 @@
             <div class="img"><img src="Assets/sleep detector.png" alt=""></div>
             <div class="detail">It can save you from accident </div>
             <h2>Anti sleep detector</h2>
-            <span>Buy Now @ ₹1500</span>
+            <span class="Buy">Buy Now @ ₹1500</span>
         </div>
 
         <!-- voltage regulator -->
@@ -58,7 +58,7 @@
             <div class="img"><img src="Assets/voltage regulator.jpg" alt=""></div>
             <div class="detail">Can be used as power supply </div>
             <h2>Voltage Regulator</h2>
-            <span>Buy Now @ ₹400</span>
+            <span class="Buy">Buy Now @ ₹400</span>
         </div>
 
         <!-- Assembled ssytems  -->
@@ -66,7 +66,7 @@
             <div class="img"><img src="Assets/system.jpg" alt=""></div>
             <div class="detail">i5 4th gen Desktop with monitor</div>
             <h2>Desktop</h2>
-            <span>Buy Now @ ₹12999</span>
+            <span class="Buy">Buy Now @ ₹12999</span>
         </div>
 
         <!-- keboard -->
@@ -74,7 +74,7 @@
             <div class="img"><img src="Assets/keyboard mouse.jpg" alt=""></div>
             <div class="detail">Light up your system b using our keyboard and mouse </div>
             <h2>Keboad & Mouses</h2>
-            <span>Buy Now @ ₹1299</span>
+            <span class="Buy">Buy Now @ ₹1299</span>
         </div>
 
         <!-- arduino -->
@@ -82,7 +82,7 @@
             <div class="img"><img src="Assets/aruino.jpg" alt=""></div>
             <div class="detail">Make your own project by using our circuits and components </div>
             <h2>Attendance Recorder</h2>
-            <span>Buy Now @ ₹1200</span>
+            <span class="Buy">Buy Now @ ₹1200</span>
         </div>
 
         <!-- help and support -->
@@ -91,7 +91,7 @@
             <div class="img"><img src="Assets/service reguest.jpg" alt=""></div>
             <div class="detail">Book for slightly fast service for your gadgets </div>
             <h2>service Request</h2>
-            <span>Buy Now @ ₹500</span>
+            <span class="Buy">Buy Now @ ₹500</span>
 
         </div>
     </main>
@@ -106,6 +106,13 @@
         </div>
 
     </footer>
+    <script>
+        document.querySelectorAll('.Buy').forEach(function(button){
+            button.addEventListener('click',function(){
+                button.textContent='Added to cart';
+            });
+        });
+    </script>
 </body>
 
 </html>
